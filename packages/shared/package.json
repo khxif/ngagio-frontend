@@ -1,0 +1,6 @@
+{
+  "name": "@ngagio/shared",
+  "exports": {
+    "./*": "./src/*.ts"
+  }
+}

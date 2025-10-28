@@ -1,0 +1,8 @@
+{
+  "name": "@ngagio/components",
+  "exports": {
+    "./*": "./src/*.tsx",
+    "./ui/*": "./src/ui/*.tsx",
+    "./core/*": "./src/core/*.tsx"
+  }
+}

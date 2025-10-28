@@ -1,0 +1,7 @@
+{
+  "name": "@ngagio/styles",
+  "main": "styles.css",
+  "exports": {
+    "./styles.css": "./src/styles.css"
+  }
+}
