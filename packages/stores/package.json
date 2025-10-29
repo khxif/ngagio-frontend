@@ -1,0 +1,6 @@
+{
+  "name": "@ngagio/stores",
+  "exports": {
+    "./*": "./src/*.ts"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "@ngagio/layouts",
+  "exports": {
+    "./*": "./src/*.tsx"
+  }
+}

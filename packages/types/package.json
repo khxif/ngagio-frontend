@@ -1,0 +1,6 @@
+{
+  "name": "@ngagio/types",
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}

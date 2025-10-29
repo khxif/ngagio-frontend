@@ -1,0 +1,6 @@
+{
+  "name": "@ngagio/providers",
+  "exports": {
+    "./*": "./src/*.tsx"
+  }
+}

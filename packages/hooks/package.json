@@ -1,0 +1,6 @@
+{
+  "name": "@ngagio/hooks",
+  "exports": {
+    "./*": "./src/*.ts"
+  }
+}

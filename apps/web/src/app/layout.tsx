@@ -1,3 +1,5 @@
+import { BaseLayout } from '@ngagio/layouts/base-layout';
+import { QueryProvider } from '@ngagio/providers/query-provider';
 import type { Metadata } from 'next';
 import './globals.css';
 
@@ -13,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <QueryProvider>
+          <BaseLayout>{children}</BaseLayout>
+        </QueryProvider>
+      </body>
     </html>
   );
 }

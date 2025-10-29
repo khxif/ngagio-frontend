@@ -1,3 +1,4 @@
 @import "tailwindcss";
 @import "@ngagio/styles/styles.css";
 @source "../../../../packages";
+@custom-variant dark (&:is(.dark *));

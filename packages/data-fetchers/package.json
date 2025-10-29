@@ -1,0 +1,6 @@
+{
+  "name": "@ngagio/data-fetchers",
+  "exports": {
+    "./*": "./src/*.ts"
+  }
+}
