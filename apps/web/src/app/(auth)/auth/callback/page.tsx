@@ -1,6 +1,8 @@
 'use client';
 
 import { Spinner } from '@ngagio/components/ui/spinner';
+import { useGoogleLoginMutation } from '@ngagio/hooks/mutations';
+import { useAuthStore } from '@ngagio/stores/auth-store';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { toast } from 'sonner';
@@ -8,9 +10,9 @@ import { supabase } from '../../../../supabase';
 
 export default function AuthCallback() {
   const router = useRouter();
-  //   const authenticate = useAuthStore(state => state.authenticate);
+  const authenticate = useAuthStore(state => state.authenticate);
 
-  //   const { mutateAsync } = useGoogleSignInMutation();
+  const { mutateAsync } = useGoogleLoginMutation();
 
   useEffect(() => {
     async function handleAuth() {
@@ -22,9 +24,9 @@ export default function AuthCallback() {
 
       if (!data.session) return;
 
-      //   const res = await mutateAsync({ token: data.session.access_token });
-      //   authenticate(res.user, res.token);
-      //   router.push('/');
+      const res = await mutateAsync({ token: data.session.access_token });
+      authenticate(res.user, res.token);
+      router.push('/');
     }
 
     handleAuth();
