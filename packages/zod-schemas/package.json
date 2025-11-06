@@ -1,0 +1,6 @@
+{
+  "name": "@ngagio/zod-schemas",
+  "exports": {
+    "./*": "./src/*.ts"
+  }
+}
