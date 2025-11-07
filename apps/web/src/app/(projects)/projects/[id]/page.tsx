@@ -1,7 +1,10 @@
 import React from 'react'
+import { Feedback } from '@ngagio/react/feedback';
 
 export default function ProjectDashboardPage() {
   return (
-    <div>ProjectsDashboardPage</div>
+    <div>
+       <Feedback text='hey'/>
+    </div>
   )
 }

@@ -1,0 +1,6 @@
+{
+  "name": "@ngagio/react",
+  "exports": {
+    "./*": "./src/*.tsx"
+  }
+}

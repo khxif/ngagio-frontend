@@ -26,6 +26,9 @@ importers:
       '@ngagio/providers':
         specifier: workspace:*
         version: link:packages/providers
+      '@ngagio/react':
+        specifier: workspace:*
+        version: link:packages/react
       '@ngagio/shared':
         specifier: workspace:*
         version: link:packages/shared
@@ -62,6 +65,9 @@ importers:
       '@radix-ui/react-tooltip':
         specifier: ^1.2.8
         version: 1.2.8(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@smastrom/react-rating':
+        specifier: ^1.5.0
+        version: 1.5.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@supabase/supabase-js':
         specifier: ^2.79.0
         version: 2.79.0
@@ -197,6 +203,8 @@ importers:
   packages/layouts: {}
 
   packages/providers: {}
+
+  packages/react: {}
 
   packages/shared: {}
 
@@ -898,6 +906,12 @@ packages:
 
   '@radix-ui/rect@1.1.1':
     resolution: {integrity: sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==}
+
+  '@smastrom/react-rating@1.5.0':
+    resolution: {integrity: sha512-7vg3NRgO0tpvEunq8BEWA8qckNSd7x3dVGqaNEfLs3Ow4ibU2EEXJtnd7Yl44xOujWIzXM5Bk2VZm2DVm065Qw==}
+    peerDependencies:
+      react: '>=18'
+      react-dom: '>=18'
 
   '@standard-schema/utils@0.3.0':
     resolution: {integrity: sha512-e7Mew686owMaPJVNNLs55PUvgz371nKgwsc4vxE49zsODpJEnxgxRo2y/OKrqueavXgZNMDVj3DdHFlaSAeU8g==}
@@ -2938,6 +2952,11 @@ snapshots:
       '@types/react-dom': 19.1.1(@types/react@19.1.0)
 
   '@radix-ui/rect@1.1.1': {}
+
+  '@smastrom/react-rating@1.5.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+    dependencies:
+      react: 19.2.0
+      react-dom: 19.2.0(react@19.2.0)
 
   '@standard-schema/utils@0.3.0': {}
 
