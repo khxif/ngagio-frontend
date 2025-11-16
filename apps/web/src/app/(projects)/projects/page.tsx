@@ -4,6 +4,7 @@ import { ProjectsModal } from '@ngagio/components/core/modals/project-modal';
 import { Card, CardContent } from '@ngagio/components/ui/card';
 import { H3, Small } from '@ngagio/components/ui/typography';
 import { Navbar } from '@ngagio/layouts/projects-dashboard/navbar';
+import { Feedback } from '@ngagio/react/feedback';
 import { useAuthStore } from '@ngagio/stores/auth-store';
 import { User } from '@ngagio/types';
 import { PlusIcon } from 'lucide-react';
@@ -30,6 +31,7 @@ export default function ProjectsPage() {
         </div>
       </section>
       <ProjectsModal open={isProjectsModalOpen} setOpen={setIsProjectsModalOpen} />
+      <Feedback componentType="button" text="Give Feedback" />
     </main>
   );
 }
